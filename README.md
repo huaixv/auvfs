@@ -2,6 +2,13 @@
 
 Atomic Upgrade over Virtual Filesystem
 
+## TLDR: Usage
+```
+git submodule update --init --recursive
+make
+./auvfs pacman -Syu
+```
+
 ## Why this matters?
 - Common Linux package managers are not **ATOMIC**
 - Non-atomic upgrades can render the system ***unusable***
