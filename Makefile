@@ -6,7 +6,7 @@ LIBRARY = libauvfs.a
 LIBRARY_OBJS = auv.o 3rdparty/log.c/src/log.o
 
 # Define the targets (can be easily extended with more targets)
-TARGETS = auvfs
+TARGETS = auvfs rename umounts finalize
 TARGET_OBJS = $(patsubst %, %.o, $(TARGETS))
 
 # All targets depend on the static library
